@@ -8,7 +8,8 @@ int main()
 
     int n=patt.length(),m=text.length(),i=0,j=1;
     vector<int>prefix(n,0),positions;
-
+    
+// Generating prefix index array
     while(j<n){
         if(patt[i]==patt[j]){
             prefix[j]=i+1;
